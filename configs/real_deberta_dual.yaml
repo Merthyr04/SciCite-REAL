@@ -1,0 +1,17 @@
+# Structural optimization: DeBERTa + BM25 + gated dual-pooling head.
+# The head fuses [CLS] with mean-pooling over retrieved evidence segments.
+model: deberta
+tag: real_deberta_dual_k3
+max_length: 256
+batch_size: 8
+grad_accumulation: 4
+lr: 2e-5
+epochs: 3
+dropout: 0.2
+freeze_embeddings: false
+retrieval: true
+index: data/index/scicite_bm25l_train.pkl
+top_k: 3
+leak_free: false
+pooling: dual
+seed: 42

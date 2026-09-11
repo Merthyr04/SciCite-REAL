@@ -1,0 +1,15 @@
+# Ablation: leak-free retrieval (never retrieve same-label evidence).
+model: deberta
+tag: ablation_real_deberta_leakfree
+max_length: 256
+batch_size: 8
+grad_accumulation: 4
+lr: 2e-5
+epochs: 3
+dropout: 0.2
+freeze_embeddings: false
+retrieval: true
+index: data/index/scicite_bm25l_train.pkl
+top_k: 3
+leak_free: true
+seed: 42

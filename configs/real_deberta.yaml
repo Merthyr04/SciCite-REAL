@@ -1,0 +1,15 @@
+# BM25 retrieval-augmented config (the proposed method), default top_k=3.
+model: deberta
+tag: real_deberta_k3
+max_length: 256
+batch_size: 8
+grad_accumulation: 4
+lr: 2e-5
+epochs: 3
+dropout: 0.2
+freeze_embeddings: false
+retrieval: true
+index: data/index/scicite_bm25l_train.pkl
+top_k: 3
+leak_free: false
+seed: 42

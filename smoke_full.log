@@ -1,0 +1,116 @@
+﻿[device] cuda (NVIDIA GeForce RTX 3060 Laptop GPU)
+python.exe : 
+At line:15 char:2762
++ ... ARNING="1"; & $py scripts\run_training.py --data data/processed/scici ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Map:   0%|          | 0/8243 [00:00<?, ? examples/s]
+Map:  25%|██▌       | 2098/8243 [00:00<00:00, 20574.98 examples/s]
+Map:  57%|█████▋    | 4730/8243 [00:00<00:00, 23520.55 examples/s]
+Map: 100%|█████████▉| 8211/8243 [00:00<00:00, 15084.63 examples/s]
+Map: 100%|██████████| 8243/8243 [00:00<00:00, 16221.44 examples/s]
+
+Map:   0%|          | 0/916 [00:00<?, ? examples/s]
+Map: 100%|██████████| 916/916 [00:00<00:00, 22795.27 examples/s]
+
+Map:   0%|          | 0/1861 [00:00<?, ? examples/s]
+Map: 100%|██████████| 1861/1861 [00:00<00:00, 23075.19 examples/s]
+
+Map:   0%|          | 0/8243 [00:00<?, ? examples/s]
+Map:  33%|███▎      | 2686/8243 [00:00<00:00, 26052.06 examples/s]
+Map:  75%|███████▍  | 6151/8243 [00:00<00:00, 23052.52 examples/s]
+Map: 100%|██████████| 8243/8243 [00:00<00:00, 23375.55 examples/s]
+
+Map:   0%|          | 0/916 [00:00<?, ? examples/s]
+Map:  92%|█████████▏| 842/916 [00:00<00:00, 5244.34 examples/s]
+Map: 100%|██████████| 916/916 [00:00<00:00, 5124.62 examples/s]
+
+Map:   0%|          | 0/1861 [00:00<?, ? examples/s]
+Map: 100%|██████████| 1861/1861 [00:00<00:00, 25620.35 examples/s]
+[transformers] The tokenizer you are loading from 'e:/Paper/SciCite-REAL/data/models/deberta' with an incorrect regex p
+attern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. T
+his will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer t
+o fix this issue.
+WARNING:transformers.tokenization_utils_tokenizers:The tokenizer you are loading from 'e:/Paper/SciCite-REAL/data/model
+s/deberta' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discus
+sions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True
+` flag when loading this tokenizer to fix this issue.
+
+Map:   0%|          | 0/8243 [00:00<?, ? examples/s]
+Map:  24%|██▍       | 2000/8243 [00:00<00:00, 13898.41 examples/s]
+Map:  49%|████▊     | 4000/8243 [00:00<00:00, 14646.90 examples/s]
+Map:  73%|███████▎  | 6000/8243 [00:00<00:00, 15239.83 examples/s]
+Map:  97%|█████████▋| 8000/8243 [00:00<00:00, 15276.33 examples/s]
+Map: 100%|██████████| 8243/8243 [00:00<00:00, 15134.93 examples/s]
+
+Map:   0%|          | 0/916 [00:00<?, ? examples/s]
+Map: 100%|██████████| 916/916 [00:00<00:00, 15724.88 examples/s]
+
+Map:   0%|          | 0/1861 [00:00<?, ? examples/s]
+Map: 100%|██████████| 1861/1861 [00:00<00:00, 17681.17 examples/s]
+Map: 100%|██████████| 1861/1861 [00:00<00:00, 17137.24 examples/s]
+C:\Users\Chen\AppData\Roaming\TRAE SOLO CN\ModularData\ai-agent\vm\tools\python\lib\site-packages\torch\jit\_script.py:
+1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+
+Loading weights:   0%|          | 0/198 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 198/198 [00:00<00:00, 35352.78it/s]
+[transformers] [1mDebertaV2Model LOAD REPORT[0m from: e:/Paper/SciCite-REAL/data/models/deberta
+Key                                     | Status     |  | 
+----------------------------------------+------------+--+-
+lm_predictions.lm_head.dense.bias       | UNEXPECTED |  | 
+lm_predictions.lm_head.bias             | UNEXPECTED |  | 
+mask_predictions.classifier.bias        | UNEXPECTED |  | 
+mask_predictions.LayerNorm.bias         | UNEXPECTED |  | 
+mask_predictions.classifier.weight      | UNEXPECTED |  | 
+mask_predictions.dense.weight           | UNEXPECTED |  | 
+lm_predictions.lm_head.dense.weight     | UNEXPECTED |  | 
+mask_predictions.dense.bias             | UNEXPECTED |  | 
+lm_predictions.lm_head.LayerNorm.bias   | UNEXPECTED |  | 
+lm_predictions.lm_head.LayerNorm.weight | UNEXPECTED |  | 
+mask_predictions.LayerNorm.weight       | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+WARNING:transformers.modeling_utils:[1mDebertaV2Model LOAD REPORT[0m from: e:/Paper/SciCite-REAL/data/models/deberta
+Key                                     | Status     |  | 
+----------------------------------------+------------+--+-
+lm_predictions.lm_head.dense.bias       | UNEXPECTED |  | 
+lm_predictions.lm_head.bias             | UNEXPECTED |  | 
+mask_predictions.classifier.bias        | UNEXPECTED |  | 
+mask_predictions.LayerNorm.bias         | UNEXPECTED |  | 
+mask_predictions.classifier.weight      | UNEXPECTED |  | 
+mask_predictions.dense.weight           | UNEXPECTED |  | 
+lm_predictions.lm_head.dense.weight     | UNEXPECTED |  | 
+mask_predictions.dense.bias             | UNEXPECTED |  | 
+lm_predictions.lm_head.LayerNorm.bias   | UNEXPECTED |  | 
+lm_predictions.lm_head.LayerNorm.weight | UNEXPECTED |  | 
+mask_predictions.LayerNorm.weight       | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+
+  0%|          | 0/258 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "E:\Paper\SciCite-REAL\scripts\run_training.py", line 157, in <module>
+    main()
+  File "E:\Paper\SciCite-REAL\scripts\run_training.py", line 122, in main
+    results = train(
+  File "e:\Paper\SciCite-REAL\src\training\trainer.py", line 139, in train
+    trainer.train()
+  File "C:\Users\Chen\AppData\Roaming\TRAE SOLO CN\ModularData\ai-agent\vm\tools\python\lib\site-packages\transformers\
+trainer.py", line 1520, in train
+    return inner_training_loop(
+  File "C:\Users\Chen\AppData\Roaming\TRAE SOLO CN\ModularData\ai-agent\vm\tools\python\lib\site-packages\transformers\
+trainer.py", line 1602, in _inner_training_loop
+    self._run_epoch(
+  File "C:\Users\Chen\AppData\Roaming\TRAE SOLO CN\ModularData\ai-agent\vm\tools\python\lib\site-packages\transformers\
+trainer.py", line 1842, in _run_epoch
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "C:\Users\Chen\AppData\Roaming\TRAE SOLO CN\ModularData\ai-agent\vm\tools\python\lib\site-packages\transformers\
+trainer.py", line 2037, in training_step
+    loss = loss / self.current_gradient_accumulation_steps
+TypeError: unsupported operand type(s) for /: 'dict' and 'int'
+
+  0%|          | 0/258 [00:00<?, ?it/s]

@@ -1,0 +1,15 @@
+# Ablation: shorter sequence length (128) with top_k=1 — memory/trade-off study.
+model: deberta
+tag: ablation_real_deberta_len128_k1
+max_length: 128
+batch_size: 8
+grad_accumulation: 4
+lr: 2e-5
+epochs: 3
+dropout: 0.2
+freeze_embeddings: false
+retrieval: true
+index: data/index/scicite_bm25l_train.pkl
+top_k: 1
+leak_free: false
+seed: 42

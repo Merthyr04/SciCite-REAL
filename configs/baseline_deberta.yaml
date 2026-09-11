@@ -1,0 +1,13 @@
+# Baseline single-model config, no retrieval.
+# Copy to your environment and edit paths as needed.
+model: deberta                # bert | scibert | deberta | deberta-small
+tag: baseline_deberta
+max_length: 256
+batch_size: 8
+grad_accumulation: 4
+lr: 2e-5
+epochs: 3
+dropout: 0.1
+freeze_embeddings: false
+retrieval: false
+seed: 42
