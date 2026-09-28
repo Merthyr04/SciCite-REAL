@@ -8,8 +8,6 @@ study of retrieval augmentation (BM25 / BM25L evidence) over three pretrained
 encoders on SciCite, with a cross-domain replication on ACL-ARC. Everything
 trains and evaluates on **6 GB of VRAM (RTX 3060)**.
 
-Paper under review at *Scientometrics* (Springer Nature).
-
 ## Headline results
 
 SciCite test split (1,861 instances), seed 42. Two runs are reported for
@@ -241,9 +239,8 @@ SciCite-REAL/
 ├── configs/           # example YAML configs (exact flags used: see Reproduce the paper)
 ├── notebooks/         # end-to-end demo
 ├── docs/              # DATA_notes.md, METHODOLOGY.md
-├── paper/             # Scientometrics submission (Springer sn-jnl) + earlier venue drafts
 ├── runs/              # per-run metrics.json and analysis JSONs
-└── data/              # downloaded & processed (gitignored; see Data below)
+└── data/              # downloaded & processed (see Data below)
 ```
 
 ## Memory tuning on a 6 GB card
@@ -259,6 +256,8 @@ smaller backbone.
 - Code: Apache-2.0. See `LICENSE`.
 - Derived splits, retrieval indices, the raw `metrics.json` behind every table,
   and the analysis JSONs in `runs/` are released with this repository.
+- The augmented inputs are shipped as `data/processed/augmented_datasets.zip`
+  (32.6 MB; unzip in place to obtain `cache/augment_*.pkl`).
 
 If you enrich inputs with cited-paper abstracts via `api.semanticscholar.org`,
 include Semantic Scholar API attribution.
@@ -271,7 +270,6 @@ include Semantic Scholar API attribution.
             A Controlled Study and Its Implications for Scientometric
             Applications},
   author = {Chen, Boxin},
-  year   = {2026},
-  note   = {Manuscript under review at Scientometrics}
+  year   = {2026}
 }
 ```

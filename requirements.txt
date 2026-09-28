@@ -8,6 +8,7 @@ torch>=2.1.0
 transformers>=4.40.0
 datasets>=2.18.0
 accelerate>=0.28.0
+safetensors>=0.4.0
 
 # --- Retrieval augmentation ---
 rank-bm25>=0.2.2

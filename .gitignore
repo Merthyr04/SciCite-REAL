@@ -28,8 +28,9 @@ data/raw/
 # 100 MB per-file limit. Shipped as a release asset instead.
 data/processed/cache/
 
-# Local staging folder for manual uploads
+# Local staging folders for manual uploads / release packaging
 _gh_upload/
+_release/
 
 # Notebooks
 .ipynb_checkpoints/
