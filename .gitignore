@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+
+# Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Model weights — large binaries, re-downloadable from HuggingFace
+checkpoints/
+outputs/
+data/models/
+*.pt
+*.bin
+*.ckpt
+*.safetensors
+*.pth
+
+# Downloaded corpora — re-fetchable via scripts/download_data.py
+data/raw/
+
+# Cached augmented inputs: 269 MB of pickles, two of which exceed GitHub's
+# 100 MB per-file limit. Shipped as a release asset instead.
+data/processed/cache/
+
+# Local staging folder for manual uploads
+_gh_upload/
+
+# Notebooks
+.ipynb_checkpoints/
+*_demo.html
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Config / secrets
+*.token
+.env
