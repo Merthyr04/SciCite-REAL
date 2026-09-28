@@ -1,0 +1,23 @@
+{
+  "model": "bert",
+  "test_loss": 0.4348761737346649,
+  "test_accuracy": 0.8570660934981192,
+  "test_macro_f1": 0.8410993722799979,
+  "test_runtime": 6.3242,
+  "test_samples_per_second": 294.266,
+  "test_steps_per_second": 18.5,
+  "epoch": 3.0,
+  "train_loss": 0.14772073924541473,
+  "train_accuracy": 0.9537789639694286,
+  "train_macro_f1": 0.9470998578592565,
+  "train_runtime": 28.4801,
+  "train_samples_per_second": 289.43,
+  "train_steps_per_second": 18.118,
+  "tag": "baseline_bert",
+  "retrieval": false,
+  "top_k": null,
+  "leak_free": null,
+  "max_length": 256,
+  "pooling": "cls",
+  "seed": 42
+}

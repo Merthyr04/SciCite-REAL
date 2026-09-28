@@ -1,0 +1,19 @@
+{
+  "n_queries": 8243,
+  "rank_bm25": {
+    "index_build_s": 0.136,
+    "scores_pass_s": 420.839,
+    "augment_pass_s": 498.154
+  },
+  "fast_bm25l": {
+    "index_build_s": 0.179,
+    "scores_pass_s": 5.522,
+    "augment_pass_s": 11.63,
+    "bm25index_build_s": 0.296
+  },
+  "max_abs_score_diff": 5.4569682106375694e-12,
+  "top3_mismatches": 0,
+  "evidence_identical": 8243,
+  "speedup_scores_pass": 76.2,
+  "speedup_augment_pass": 42.8
+}

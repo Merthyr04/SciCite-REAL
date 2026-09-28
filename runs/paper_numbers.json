@@ -1,0 +1,1356 @@
+{
+  "main": {
+    "BERT-base": {
+      "acc": 85.71,
+      "f1": 84.11,
+      "val_acc": 0,
+      "val_f1": 0,
+      "epochs": 3.0,
+      "pooling": "cls",
+      "retrieval": false,
+      "seed": 42,
+      "leak_free": null,
+      "train_acc": 95.38
+    },
+    "SciBERT": {
+      "acc": 86.3,
+      "f1": 85.11,
+      "val_acc": 0,
+      "val_f1": 0,
+      "epochs": 3.0,
+      "pooling": "cls",
+      "retrieval": false,
+      "seed": 42,
+      "leak_free": null,
+      "train_acc": 96.45
+    },
+    "DeBERTa-v3-base": {
+      "acc": 85.98,
+      "f1": 84.22,
+      "val_acc": 0,
+      "val_f1": 0,
+      "epochs": 3.0,
+      "pooling": "cls",
+      "retrieval": false,
+      "seed": 42,
+      "leak_free": null,
+      "train_acc": 92.18
+    },
+    "DeBERTa-v3-base (seed 123)": {
+      "acc": 86.14,
+      "f1": 84.43,
+      "val_acc": 0,
+      "val_f1": 0,
+      "epochs": 3.0,
+      "pooling": "cls",
+      "retrieval": false,
+      "seed": 123,
+      "leak_free": null,
+      "train_acc": 92.54
+    },
+    "DeBERTa-v3-base (repeat run)": {
+      "acc": 86.89,
+      "f1": 85.49,
+      "val_acc": 0,
+      "val_f1": 0,
+      "epochs": 1.0,
+      "pooling": "cls",
+      "retrieval": false,
+      "seed": 42,
+      "leak_free": null,
+      "train_acc": 88.01
+    },
+    "DeBERTa + BM25L (CLS)": {
+      "acc": 59.97,
+      "f1": 38.73,
+      "val_acc": 0,
+      "val_f1": 0,
+      "epochs": 3.0,
+      "pooling": "cls",
+      "retrieval": true,
+      "seed": 42,
+      "leak_free": false,
+      "train_acc": 64.88
+    },
+    "DeBERTa + BM25L (dual, run 2)": {
+      "acc": 86.03,
+      "f1": 84.58,
+      "val_acc": 0,
+      "val_f1": 0,
+      "epochs": 3.0,
+      "pooling": "dual",
+      "retrieval": true,
+      "seed": 42,
+      "leak_free": false,
+      "train_acc": 91.87
+    },
+    "DeBERTa + BM25L (dual, run 1)": {
+      "acc": 85.6,
+      "f1": 84.2,
+      "val_acc": 0,
+      "val_f1": 0,
+      "epochs": 3.0,
+      "pooling": "dual",
+      "retrieval": true,
+      "seed": 42,
+      "leak_free": false,
+      "train_acc": 91.77
+    },
+    "DeBERTa + BM25L (dual, dropout 0.2)": {
+      "acc": 84.31,
+      "f1": 82.72,
+      "val_acc": 0,
+      "val_f1": 0,
+      "epochs": 3.0,
+      "pooling": "dual",
+      "retrieval": true,
+      "seed": 42,
+      "leak_free": false,
+      "train_acc": 88.04
+    },
+    "DeBERTa + BM25L (dual, seed 1)": {
+      "acc": 85.28,
+      "f1": 83.53,
+      "val_acc": 0,
+      "val_f1": 0,
+      "epochs": 3.0,
+      "pooling": "dual",
+      "retrieval": true,
+      "seed": 1,
+      "leak_free": false,
+      "train_acc": 90.93
+    },
+    "DeBERTa + BM25 (dual, seed 42)": {
+      "acc": 85.38,
+      "f1": 83.93,
+      "val_acc": 0,
+      "val_f1": 0,
+      "epochs": 3.0,
+      "pooling": "dual",
+      "retrieval": true,
+      "seed": 42,
+      "leak_free": false,
+      "train_acc": 92.41
+    },
+    "DeBERTa + BM25 (dual, seed 1)": {
+      "acc": 83.23,
+      "f1": 81.45,
+      "val_acc": 0,
+      "val_f1": 0,
+      "epochs": 3.0,
+      "pooling": "dual",
+      "retrieval": true,
+      "seed": 1,
+      "leak_free": false,
+      "train_acc": 91.44
+    },
+    "DeBERTa + BM25 (CLS)": {
+      "acc": 83.07,
+      "f1": 81.09,
+      "val_acc": 0,
+      "val_f1": 0,
+      "epochs": 3.0,
+      "pooling": "cls",
+      "retrieval": true,
+      "seed": 42,
+      "leak_free": false,
+      "train_acc": 91.44
+    },
+    "DeBERTa + BM25L (CLS, target preserved)": {
+      "acc": 85.87,
+      "f1": 84.51,
+      "val_acc": 0,
+      "val_f1": 0,
+      "epochs": 3.0,
+      "pooling": "cls",
+      "retrieval": true,
+      "seed": 42,
+      "leak_free": false,
+      "train_acc": 91.02
+    },
+    "DeBERTa + BM25 (CLS, target preserved)": {
+      "acc": 85.22,
+      "f1": 83.35,
+      "val_acc": 0,
+      "val_f1": 0,
+      "epochs": 3.0,
+      "pooling": "cls",
+      "retrieval": true,
+      "seed": 42,
+      "leak_free": false,
+      "train_acc": 91.37
+    },
+    "BERT + BM25L (dual)": {
+      "acc": 84.85,
+      "f1": 83.22,
+      "val_acc": 0,
+      "val_f1": 0,
+      "epochs": 3.0,
+      "pooling": "dual",
+      "retrieval": true,
+      "seed": 42,
+      "leak_free": false,
+      "train_acc": 94.3
+    },
+    "SciBERT + BM25L (dual)": {
+      "acc": 86.24,
+      "f1": 85.01,
+      "val_acc": 0,
+      "val_f1": 0,
+      "epochs": 3.0,
+      "pooling": "dual",
+      "retrieval": true,
+      "seed": 42,
+      "leak_free": false,
+      "train_acc": 95.62
+    }
+  },
+  "ablation": {
+    "CLS head (right-truncated)": {
+      "acc": 59.97,
+      "f1": 38.73,
+      "val_acc": 0,
+      "val_f1": 0,
+      "epochs": 3.0,
+      "pooling": "cls",
+      "retrieval": true,
+      "seed": 42,
+      "leak_free": false,
+      "train_acc": 64.88
+    },
+    "CLS head (target preserved)": {
+      "acc": 85.87,
+      "f1": 84.51,
+      "val_acc": 0,
+      "val_f1": 0,
+      "epochs": 3.0,
+      "pooling": "cls",
+      "retrieval": true,
+      "seed": 42,
+      "leak_free": false,
+      "train_acc": 91.02
+    },
+    "Dual head": {
+      "acc": 86.03,
+      "f1": 84.58,
+      "val_acc": 0,
+      "val_f1": 0,
+      "epochs": 3.0,
+      "pooling": "dual",
+      "retrieval": true,
+      "seed": 42,
+      "leak_free": false,
+      "train_acc": 91.87
+    },
+    "Leak-free mask": {
+      "acc": 96.02,
+      "f1": 94.48,
+      "val_acc": 0,
+      "val_f1": 0,
+      "epochs": 3.0,
+      "pooling": "dual",
+      "retrieval": true,
+      "seed": 42,
+      "leak_free": true,
+      "train_acc": 98.05
+    }
+  },
+  "aclarc": {
+    "DeBERTa-v3-base (no retrieval)": {
+      "acc": 67.63,
+      "f1": 31.36,
+      "val_acc": 0,
+      "val_f1": 0,
+      "epochs": 3.0,
+      "pooling": "cls",
+      "retrieval": false,
+      "seed": 42,
+      "leak_free": null,
+      "train_acc": 72.51
+    },
+    "+ BM25L (CLS head)": {
+      "acc": 51.08,
+      "f1": 12.44,
+      "val_acc": 0,
+      "val_f1": 0,
+      "epochs": 3.0,
+      "pooling": "cls",
+      "retrieval": true,
+      "seed": 42,
+      "leak_free": false,
+      "train_acc": 51.6
+    },
+    "+ BM25L (dual head)": {
+      "acc": 56.12,
+      "f1": 21.98,
+      "val_acc": 0,
+      "val_f1": 0,
+      "epochs": 3.0,
+      "pooling": "dual",
+      "retrieval": true,
+      "seed": 42,
+      "leak_free": false,
+      "train_acc": 66.71
+    },
+    "+ BM25L (dual, leak-free)": {
+      "acc": 61.15,
+      "f1": 27.73,
+      "val_acc": 0,
+      "val_f1": 0,
+      "epochs": 3.0,
+      "pooling": "dual",
+      "retrieval": true,
+      "seed": 42,
+      "leak_free": true,
+      "train_acc": 67.77
+    }
+  },
+  "error_analysis": {
+    "DeBERTa-v3-base baseline": {
+      "n_test": 1861,
+      "accuracy": 85.92,
+      "per_class": {
+        "background": {
+          "support": 997,
+          "precision": 0.8902,
+          "recall": 0.8786,
+          "f1": 0.8844
+        },
+        "method": {
+          "support": 605,
+          "precision": 0.9251,
+          "recall": 0.7967,
+          "f1": 0.8561
+        },
+        "result": {
+          "support": 259,
+          "precision": 0.677,
+          "recall": 0.9305,
+          "f1": 0.7837
+        }
+      },
+      "by_section": {
+        "Discussion": {
+          "n": 777,
+          "correct": 677,
+          "accuracy": 0.8713
+        },
+        "Introduction": {
+          "n": 84,
+          "correct": 74,
+          "accuracy": 0.881
+        },
+        "Methods": {
+          "n": 410,
+          "correct": 345,
+          "accuracy": 0.8415
+        },
+        "Other / unlabelled": {
+          "n": 199,
+          "correct": 170,
+          "accuracy": 0.8543
+        },
+        "Related work": {
+          "n": 3,
+          "correct": 2,
+          "accuracy": 0.6667
+        },
+        "Results": {
+          "n": 388,
+          "correct": 331,
+          "accuracy": 0.8531
+        }
+      },
+      "by_length": {
+        "21-40 words": {
+          "n": 1092,
+          "correct": 955,
+          "accuracy": 0.8745
+        },
+        "41-60 words": {
+          "n": 442,
+          "correct": 368,
+          "accuracy": 0.8326
+        },
+        "<=20 words": {
+          "n": 256,
+          "correct": 222,
+          "accuracy": 0.8672
+        },
+        ">60 words": {
+          "n": 71,
+          "correct": 54,
+          "accuracy": 0.7606
+        }
+      },
+      "top_confusions": [
+        {
+          "gold": "method",
+          "pred": "background",
+          "n": 92
+        },
+        {
+          "gold": "background",
+          "pred": "result",
+          "n": 84
+        },
+        {
+          "gold": "background",
+          "pred": "method",
+          "n": 37
+        },
+        {
+          "gold": "method",
+          "pred": "result",
+          "n": 31
+        },
+        {
+          "gold": "result",
+          "pred": "background",
+          "n": 16
+        },
+        {
+          "gold": "result",
+          "pred": "method",
+          "n": 2
+        }
+      ],
+      "confusion_matrix": {
+        "background": {
+          "background": 876,
+          "method": 37,
+          "result": 84
+        },
+        "result": {
+          "result": 241,
+          "background": 16,
+          "method": 2
+        },
+        "method": {
+          "method": 482,
+          "background": 92,
+          "result": 31
+        }
+      },
+      "by_gold_in_evidence": null,
+      "mean_evidence_agreement": null
+    },
+    "DeBERTa + BM25L (dual)": {
+      "n_test": 1861,
+      "accuracy": 85.98,
+      "per_class": {
+        "background": {
+          "support": 997,
+          "precision": 0.8864,
+          "recall": 0.8766,
+          "f1": 0.8815
+        },
+        "method": {
+          "support": 605,
+          "precision": 0.8812,
+          "recall": 0.8215,
+          "f1": 0.8503
+        },
+        "result": {
+          "support": 259,
+          "precision": 0.7363,
+          "recall": 0.8842,
+          "f1": 0.8035
+        }
+      },
+      "by_section": {
+        "Discussion": {
+          "n": 777,
+          "correct": 684,
+          "accuracy": 0.8803
+        },
+        "Introduction": {
+          "n": 84,
+          "correct": 70,
+          "accuracy": 0.8333
+        },
+        "Methods": {
+          "n": 410,
+          "correct": 352,
+          "accuracy": 0.8585
+        },
+        "Other / unlabelled": {
+          "n": 199,
+          "correct": 163,
+          "accuracy": 0.8191
+        },
+        "Related work": {
+          "n": 3,
+          "correct": 2,
+          "accuracy": 0.6667
+        },
+        "Results": {
+          "n": 388,
+          "correct": 329,
+          "accuracy": 0.8479
+        }
+      },
+      "by_length": {
+        "21-40 words": {
+          "n": 1092,
+          "correct": 950,
+          "accuracy": 0.87
+        },
+        "41-60 words": {
+          "n": 442,
+          "correct": 376,
+          "accuracy": 0.8507
+        },
+        "<=20 words": {
+          "n": 256,
+          "correct": 220,
+          "accuracy": 0.8594
+        },
+        ">60 words": {
+          "n": 71,
+          "correct": 54,
+          "accuracy": 0.7606
+        }
+      },
+      "top_confusions": [
+        {
+          "gold": "method",
+          "pred": "background",
+          "n": 86
+        },
+        {
+          "gold": "background",
+          "pred": "method",
+          "n": 63
+        },
+        {
+          "gold": "background",
+          "pred": "result",
+          "n": 60
+        },
+        {
+          "gold": "result",
+          "pred": "background",
+          "n": 26
+        },
+        {
+          "gold": "method",
+          "pred": "result",
+          "n": 22
+        },
+        {
+          "gold": "result",
+          "pred": "method",
+          "n": 4
+        }
+      ],
+      "confusion_matrix": {
+        "background": {
+          "method": 63,
+          "background": 874,
+          "result": 60
+        },
+        "result": {
+          "result": 229,
+          "background": 26,
+          "method": 4
+        },
+        "method": {
+          "method": 497,
+          "background": 86,
+          "result": 22
+        }
+      },
+      "by_gold_in_evidence": {
+        "False": {
+          "n": 611,
+          "correct": 509,
+          "accuracy": 0.8331
+        },
+        "True": {
+          "n": 1250,
+          "correct": 1091,
+          "accuracy": 0.8728
+        }
+      },
+      "mean_evidence_agreement": 0.6717
+    },
+    "DeBERTa + BM25L (dual, d=0.2)": {
+      "n_test": 1861,
+      "accuracy": 84.2,
+      "per_class": {
+        "background": {
+          "support": 997,
+          "precision": 0.9159,
+          "recall": 0.8195,
+          "f1": 0.865
+        },
+        "method": {
+          "support": 605,
+          "precision": 0.8653,
+          "recall": 0.8281,
+          "f1": 0.8463
+        },
+        "result": {
+          "support": 259,
+          "precision": 0.6385,
+          "recall": 0.9614,
+          "f1": 0.7673
+        }
+      },
+      "by_section": {
+        "Discussion": {
+          "n": 777,
+          "correct": 666,
+          "accuracy": 0.8571
+        },
+        "Introduction": {
+          "n": 84,
+          "correct": 68,
+          "accuracy": 0.8095
+        },
+        "Methods": {
+          "n": 410,
+          "correct": 353,
+          "accuracy": 0.861
+        },
+        "Other / unlabelled": {
+          "n": 199,
+          "correct": 156,
+          "accuracy": 0.7839
+        },
+        "Related work": {
+          "n": 3,
+          "correct": 3,
+          "accuracy": 1.0
+        },
+        "Results": {
+          "n": 388,
+          "correct": 321,
+          "accuracy": 0.8273
+        }
+      },
+      "by_length": {
+        "21-40 words": {
+          "n": 1092,
+          "correct": 920,
+          "accuracy": 0.8425
+        },
+        "41-60 words": {
+          "n": 442,
+          "correct": 369,
+          "accuracy": 0.8348
+        },
+        "<=20 words": {
+          "n": 256,
+          "correct": 219,
+          "accuracy": 0.8555
+        },
+        ">60 words": {
+          "n": 71,
+          "correct": 59,
+          "accuracy": 0.831
+        }
+      },
+      "top_confusions": [
+        {
+          "gold": "background",
+          "pred": "result",
+          "n": 103
+        },
+        {
+          "gold": "background",
+          "pred": "method",
+          "n": 77
+        },
+        {
+          "gold": "method",
+          "pred": "background",
+          "n": 66
+        },
+        {
+          "gold": "method",
+          "pred": "result",
+          "n": 38
+        },
+        {
+          "gold": "result",
+          "pred": "background",
+          "n": 9
+        },
+        {
+          "gold": "result",
+          "pred": "method",
+          "n": 1
+        }
+      ],
+      "confusion_matrix": {
+        "background": {
+          "method": 77,
+          "result": 103,
+          "background": 817
+        },
+        "result": {
+          "result": 249,
+          "background": 9,
+          "method": 1
+        },
+        "method": {
+          "method": 501,
+          "background": 66,
+          "result": 38
+        }
+      },
+      "by_gold_in_evidence": {
+        "False": {
+          "n": 611,
+          "correct": 523,
+          "accuracy": 0.856
+        },
+        "True": {
+          "n": 1250,
+          "correct": 1044,
+          "accuracy": 0.8352
+        }
+      },
+      "mean_evidence_agreement": 0.6717
+    },
+    "DeBERTa + BM25 (dual)": {
+      "n_test": 1861,
+      "accuracy": 85.33,
+      "per_class": {
+        "background": {
+          "support": 997,
+          "precision": 0.9151,
+          "recall": 0.8325,
+          "f1": 0.8718
+        },
+        "method": {
+          "support": 605,
+          "precision": 0.8513,
+          "recall": 0.8612,
+          "f1": 0.8562
+        },
+        "result": {
+          "support": 259,
+          "precision": 0.693,
+          "recall": 0.9151,
+          "f1": 0.7887
+        }
+      },
+      "by_section": {
+        "Discussion": {
+          "n": 777,
+          "correct": 670,
+          "accuracy": 0.8623
+        },
+        "Introduction": {
+          "n": 84,
+          "correct": 73,
+          "accuracy": 0.869
+        },
+        "Methods": {
+          "n": 410,
+          "correct": 369,
+          "accuracy": 0.9
+        },
+        "Other / unlabelled": {
+          "n": 199,
+          "correct": 159,
+          "accuracy": 0.799
+        },
+        "Related work": {
+          "n": 3,
+          "correct": 3,
+          "accuracy": 1.0
+        },
+        "Results": {
+          "n": 388,
+          "correct": 314,
+          "accuracy": 0.8093
+        }
+      },
+      "by_length": {
+        "21-40 words": {
+          "n": 1092,
+          "correct": 942,
+          "accuracy": 0.8626
+        },
+        "41-60 words": {
+          "n": 442,
+          "correct": 368,
+          "accuracy": 0.8326
+        },
+        "<=20 words": {
+          "n": 256,
+          "correct": 225,
+          "accuracy": 0.8789
+        },
+        ">60 words": {
+          "n": 71,
+          "correct": 53,
+          "accuracy": 0.7465
+        }
+      },
+      "top_confusions": [
+        {
+          "gold": "background",
+          "pred": "method",
+          "n": 85
+        },
+        {
+          "gold": "background",
+          "pred": "result",
+          "n": 82
+        },
+        {
+          "gold": "method",
+          "pred": "background",
+          "n": 61
+        },
+        {
+          "gold": "method",
+          "pred": "result",
+          "n": 23
+        },
+        {
+          "gold": "result",
+          "pred": "background",
+          "n": 16
+        },
+        {
+          "gold": "result",
+          "pred": "method",
+          "n": 6
+        }
+      ],
+      "confusion_matrix": {
+        "background": {
+          "method": 85,
+          "background": 830,
+          "result": 82
+        },
+        "result": {
+          "result": 237,
+          "background": 16,
+          "method": 6
+        },
+        "method": {
+          "method": 521,
+          "background": 61,
+          "result": 23
+        }
+      },
+      "by_gold_in_evidence": {
+        "False": {
+          "n": 216,
+          "correct": 133,
+          "accuracy": 0.6157
+        },
+        "True": {
+          "n": 1645,
+          "correct": 1455,
+          "accuracy": 0.8845
+        }
+      },
+      "mean_evidence_agreement": 0.8839
+    }
+  },
+  "distribution_scicite": {
+    "label_distribution": {
+      "train": {
+        "background": {
+          "n": 4840,
+          "pct": 58.72
+        },
+        "method": {
+          "n": 2294,
+          "pct": 27.83
+        },
+        "result": {
+          "n": 1109,
+          "pct": 13.45
+        },
+        "_total": 8243
+      },
+      "dev": {
+        "background": {
+          "n": 538,
+          "pct": 58.73
+        },
+        "method": {
+          "n": 255,
+          "pct": 27.84
+        },
+        "result": {
+          "n": 123,
+          "pct": 13.43
+        },
+        "_total": 916
+      },
+      "test": {
+        "background": {
+          "n": 997,
+          "pct": 53.57
+        },
+        "method": {
+          "n": 605,
+          "pct": 32.51
+        },
+        "result": {
+          "n": 259,
+          "pct": 13.92
+        },
+        "_total": 1861
+      }
+    },
+    "intent_by_section_train": {
+      "Introduction": {
+        "n": 1685,
+        "pct_of_split": 20.44,
+        "background": 88.2,
+        "method": 9.9,
+        "result": 1.9
+      },
+      "Related work": {
+        "n": 181,
+        "pct_of_split": 2.2,
+        "background": 84.5,
+        "method": 13.8,
+        "result": 1.7
+      },
+      "Methods": {
+        "n": 1709,
+        "pct_of_split": 20.73,
+        "background": 18.6,
+        "method": 80.7,
+        "result": 0.7
+      },
+      "Results": {
+        "n": 982,
+        "pct_of_split": 11.91,
+        "background": 58.6,
+        "method": 28.8,
+        "result": 12.6
+      },
+      "Discussion": {
+        "n": 2056,
+        "pct_of_split": 24.94,
+        "background": 55.8,
+        "method": 4.0,
+        "result": 40.2
+      },
+      "Other / unlabelled": {
+        "n": 1630,
+        "pct_of_split": 19.77,
+        "background": 71.2,
+        "method": 22.0,
+        "result": 6.9
+      }
+    },
+    "priors_on_test": {
+      "global_majority_label": "background",
+      "global_majority_accuracy": 0.5357,
+      "section_prior_accuracy": 0.7399,
+      "section_prior_fallback_rows": 0,
+      "section_majority_map": {
+        "Introduction": "background",
+        "Related work": "background",
+        "Methods": "method",
+        "Results": "background",
+        "Discussion": "background",
+        "Other / unlabelled": "background"
+      },
+      "n_test": 1861
+    },
+    "section_distribution": {
+      "train": {
+        "Introduction": {
+          "n": 1685,
+          "pct": 20.44
+        },
+        "Related work": {
+          "n": 181,
+          "pct": 2.2
+        },
+        "Methods": {
+          "n": 1709,
+          "pct": 20.73
+        },
+        "Results": {
+          "n": 982,
+          "pct": 11.91
+        },
+        "Discussion": {
+          "n": 2056,
+          "pct": 24.94
+        },
+        "Other / unlabelled": {
+          "n": 1630,
+          "pct": 19.77
+        }
+      },
+      "dev": {
+        "Introduction": {
+          "n": 199,
+          "pct": 21.72
+        },
+        "Related work": {
+          "n": 18,
+          "pct": 1.97
+        },
+        "Methods": {
+          "n": 180,
+          "pct": 19.65
+        },
+        "Results": {
+          "n": 105,
+          "pct": 11.46
+        },
+        "Discussion": {
+          "n": 224,
+          "pct": 24.45
+        },
+        "Other / unlabelled": {
+          "n": 190,
+          "pct": 20.74
+        }
+      },
+      "test": {
+        "Introduction": {
+          "n": 84,
+          "pct": 4.51
+        },
+        "Related work": {
+          "n": 3,
+          "pct": 0.16
+        },
+        "Methods": {
+          "n": 410,
+          "pct": 22.03
+        },
+        "Results": {
+          "n": 388,
+          "pct": 20.85
+        },
+        "Discussion": {
+          "n": 777,
+          "pct": 41.75
+        },
+        "Other / unlabelled": {
+          "n": 199,
+          "pct": 10.69
+        }
+      }
+    },
+    "context_length_words": {
+      "background": {
+        "n": 4840,
+        "mean": 33.5,
+        "median": 31.0,
+        "p90": 48,
+        "max": 505
+      },
+      "method": {
+        "n": 2294,
+        "mean": 33.2,
+        "median": 30.0,
+        "p90": 49,
+        "max": 400
+      },
+      "result": {
+        "n": 1109,
+        "mean": 37.4,
+        "median": 34,
+        "p90": 53,
+        "max": 346
+      }
+    }
+  },
+  "distribution_aclarc": {
+    "label_distribution": {
+      "train": {
+        "Background": {
+          "n": 867,
+          "pct": 51.36
+        },
+        "CompareOrContrast": {
+          "n": 305,
+          "pct": 18.07
+        },
+        "Extends": {
+          "n": 63,
+          "pct": 3.73
+        },
+        "Future": {
+          "n": 60,
+          "pct": 3.55
+        },
+        "Motivation": {
+          "n": 76,
+          "pct": 4.5
+        },
+        "Uses": {
+          "n": 317,
+          "pct": 18.78
+        },
+        "_total": 1688
+      },
+      "dev": {
+        "Background": {
+          "n": 59,
+          "pct": 51.75
+        },
+        "CompareOrContrast": {
+          "n": 21,
+          "pct": 18.42
+        },
+        "Extends": {
+          "n": 4,
+          "pct": 3.51
+        },
+        "Future": {
+          "n": 4,
+          "pct": 3.51
+        },
+        "Motivation": {
+          "n": 5,
+          "pct": 4.39
+        },
+        "Uses": {
+          "n": 21,
+          "pct": 18.42
+        },
+        "_total": 114
+      },
+      "test": {
+        "Background": {
+          "n": 71,
+          "pct": 51.08
+        },
+        "CompareOrContrast": {
+          "n": 25,
+          "pct": 17.99
+        },
+        "Extends": {
+          "n": 5,
+          "pct": 3.6
+        },
+        "Future": {
+          "n": 5,
+          "pct": 3.6
+        },
+        "Motivation": {
+          "n": 7,
+          "pct": 5.04
+        },
+        "Uses": {
+          "n": 26,
+          "pct": 18.71
+        },
+        "_total": 139
+      }
+    },
+    "intent_by_section_train": {
+      "Introduction": {
+        "n": 527,
+        "pct_of_split": 31.22,
+        "Background": 74.6,
+        "CompareOrContrast": 10.2,
+        "Extends": 3.0,
+        "Future": 0.2,
+        "Motivation": 4.6,
+        "Uses": 7.4
+      },
+      "Related work": {
+        "n": 268,
+        "pct_of_split": 15.88,
+        "Background": 64.9,
+        "CompareOrContrast": 24.6,
+        "Extends": 3.4,
+        "Future": 0.4,
+        "Motivation": 0.7,
+        "Uses": 6.0
+      },
+      "Methods": {
+        "n": 109,
+        "pct_of_split": 6.46,
+        "Background": 26.6,
+        "CompareOrContrast": 20.2,
+        "Extends": 1.8,
+        "Future": 2.8,
+        "Motivation": 9.2,
+        "Uses": 39.4
+      },
+      "Results": {
+        "n": 240,
+        "pct_of_split": 14.22,
+        "Background": 22.9,
+        "CompareOrContrast": 19.2,
+        "Extends": 6.7,
+        "Future": 2.1,
+        "Motivation": 7.1,
+        "Uses": 42.1
+      },
+      "Discussion": {
+        "n": 79,
+        "pct_of_split": 4.68,
+        "Background": 16.5,
+        "CompareOrContrast": 26.6,
+        "Extends": 1.3,
+        "Future": 46.8,
+        "Motivation": 1.3,
+        "Uses": 7.6
+      },
+      "Other / unlabelled": {
+        "n": 465,
+        "pct_of_split": 27.55,
+        "Background": 43.7,
+        "CompareOrContrast": 20.6,
+        "Extends": 4.1,
+        "Future": 2.8,
+        "Motivation": 4.7,
+        "Uses": 24.1
+      }
+    },
+    "priors_on_test": {
+      "global_majority_label": "Background",
+      "global_majority_accuracy": 0.5108,
+      "section_prior_accuracy": 0.5971,
+      "section_prior_fallback_rows": 0,
+      "section_majority_map": {
+        "Introduction": "Background",
+        "Related work": "Background",
+        "Methods": "Uses",
+        "Results": "Uses",
+        "Discussion": "Future",
+        "Other / unlabelled": "Background"
+      },
+      "n_test": 139
+    },
+    "section_distribution": {
+      "train": {
+        "Introduction": {
+          "n": 527,
+          "pct": 31.22
+        },
+        "Related work": {
+          "n": 268,
+          "pct": 15.88
+        },
+        "Methods": {
+          "n": 109,
+          "pct": 6.46
+        },
+        "Results": {
+          "n": 240,
+          "pct": 14.22
+        },
+        "Discussion": {
+          "n": 79,
+          "pct": 4.68
+        },
+        "Other / unlabelled": {
+          "n": 465,
+          "pct": 27.55
+        }
+      },
+      "dev": {
+        "Introduction": {
+          "n": 23,
+          "pct": 20.18
+        },
+        "Related work": {
+          "n": 19,
+          "pct": 16.67
+        },
+        "Methods": {
+          "n": 9,
+          "pct": 7.89
+        },
+        "Results": {
+          "n": 22,
+          "pct": 19.3
+        },
+        "Discussion": {
+          "n": 7,
+          "pct": 6.14
+        },
+        "Other / unlabelled": {
+          "n": 34,
+          "pct": 29.82
+        }
+      },
+      "test": {
+        "Introduction": {
+          "n": 47,
+          "pct": 33.81
+        },
+        "Related work": {
+          "n": 16,
+          "pct": 11.51
+        },
+        "Methods": {
+          "n": 13,
+          "pct": 9.35
+        },
+        "Results": {
+          "n": 18,
+          "pct": 12.95
+        },
+        "Discussion": {
+          "n": 9,
+          "pct": 6.47
+        },
+        "Other / unlabelled": {
+          "n": 36,
+          "pct": 25.9
+        }
+      }
+    },
+    "context_length_words": {
+      "Background": {
+        "n": 867,
+        "mean": 44.9,
+        "median": 40,
+        "p90": 72,
+        "max": 224
+      },
+      "CompareOrContrast": {
+        "n": 305,
+        "mean": 40.6,
+        "median": 37,
+        "p90": 63,
+        "max": 129
+      },
+      "Extends": {
+        "n": 63,
+        "mean": 37.5,
+        "median": 34,
+        "p90": 57,
+        "max": 92
+      },
+      "Future": {
+        "n": 60,
+        "mean": 41.9,
+        "median": 34.5,
+        "p90": 72,
+        "max": 109
+      },
+      "Motivation": {
+        "n": 76,
+        "mean": 42.2,
+        "median": 38.5,
+        "p90": 66,
+        "max": 91
+      },
+      "Uses": {
+        "n": 317,
+        "mean": 36.4,
+        "median": 32,
+        "p90": 55,
+        "max": 219
+      }
+    }
+  }
+}

@@ -27,7 +27,7 @@ training corpus) with **BM25L** (Lv & Zhai, 2011) and prepend them as evidence:
 Concatenated evidence breaks a bare `[CLS]` head (59.97% accuracy in our runs).
 The dual head computes two views — `[CLS]` for the target sentence and
 mean-pooling over evidence token positions — then fuses them with a learned
-scalar gate before the linear head. One extra linear layer of parameters.
+element-wise gate before the linear head. One extra linear layer of parameters.
 
 ## Retrieval details (BM25L)
 - Tokenisation: lowercase, strip punctuation, fold whitespace
@@ -57,7 +57,7 @@ budget) and writes `runs/train_throughput_bench.json`.
   result: the mask *itself* leaks — with 3 classes and k=3, the surviving
   neighbours carry only the other two classes, so the target label is the
   class absent from the input; the model learns this elimination rule and
-  reaches 96.40% test / 97.88% train accuracy. Never treat the leak-free
+  reaches 96.02% test / 98.05% train accuracy. Never treat the leak-free
   number as a performance gain; the default protocol retrieves label-blind.
 
 ## 6 GB VRAM training recipe (RTX 3060)
@@ -67,7 +67,7 @@ budget) and writes `runs/train_throughput_bench.json`.
 | `--batch-size 8` + `--grad-accumulation 4` | effective batch 32 | gradient quality with small memory |
 | `--max-length 256` | short citation snippets | memory + speed |
 | `gradient_checkpointing` | on | saves ~40% activation RAM |
-| **fp32 backbone load** | required | mixed fp16/fp32 weights collapse to majority-class silently (53.57% acc / 23.26 macro-F1 in our runs); load with `torch_dtype=torch.float32` and `.contiguous()` |
+| **fp32 backbone load** | required | load the backbone with `torch_dtype=torch.float32` and `.contiguous()`; the rest of the model trains in bf16 |
 | `freeze_embeddings` | optional | frees embedding matrix |
 | `deberta-small` | alternative | even lighter backbone |
 
@@ -79,4 +79,4 @@ reusing the configuration load byte-identical evidence in under a second.
 ## Evaluation
 - **Accuracy** (aligns with original SciCite)
 - **Macro-F1** (robust to `background`-heavy imbalance)
-- ablations: head (CLS vs dual) / dtype stability / `max_length` / `top_k` / leak-free
+- ablations: head (CLS vs dual) / `max_length` / `top_k` / leak-free

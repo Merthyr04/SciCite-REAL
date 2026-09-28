@@ -1,0 +1,130 @@
+{
+  "tag": "err_baseline_deberta",
+  "checkpoint": "runs\\baseline_deberta\\best_model",
+  "pooling": "cls",
+  "n_test": 1861,
+  "accuracy": 0.8592,
+  "confusion_matrix": {
+    "background": {
+      "background": 876,
+      "method": 37,
+      "result": 84
+    },
+    "result": {
+      "result": 241,
+      "background": 16,
+      "method": 2
+    },
+    "method": {
+      "method": 482,
+      "background": 92,
+      "result": 31
+    }
+  },
+  "per_class": {
+    "background": {
+      "support": 997,
+      "precision": 0.8902,
+      "recall": 0.8786,
+      "f1": 0.8844
+    },
+    "method": {
+      "support": 605,
+      "precision": 0.9251,
+      "recall": 0.7967,
+      "f1": 0.8561
+    },
+    "result": {
+      "support": 259,
+      "precision": 0.677,
+      "recall": 0.9305,
+      "f1": 0.7837
+    }
+  },
+  "top_confusions": [
+    {
+      "gold": "method",
+      "pred": "background",
+      "n": 92
+    },
+    {
+      "gold": "background",
+      "pred": "result",
+      "n": 84
+    },
+    {
+      "gold": "background",
+      "pred": "method",
+      "n": 37
+    },
+    {
+      "gold": "method",
+      "pred": "result",
+      "n": 31
+    },
+    {
+      "gold": "result",
+      "pred": "background",
+      "n": 16
+    },
+    {
+      "gold": "result",
+      "pred": "method",
+      "n": 2
+    }
+  ],
+  "by_section": {
+    "Discussion": {
+      "n": 777,
+      "correct": 677,
+      "accuracy": 0.8713
+    },
+    "Introduction": {
+      "n": 84,
+      "correct": 74,
+      "accuracy": 0.881
+    },
+    "Methods": {
+      "n": 410,
+      "correct": 345,
+      "accuracy": 0.8415
+    },
+    "Other / unlabelled": {
+      "n": 199,
+      "correct": 170,
+      "accuracy": 0.8543
+    },
+    "Related work": {
+      "n": 3,
+      "correct": 2,
+      "accuracy": 0.6667
+    },
+    "Results": {
+      "n": 388,
+      "correct": 331,
+      "accuracy": 0.8531
+    }
+  },
+  "by_length": {
+    "21-40 words": {
+      "n": 1092,
+      "correct": 955,
+      "accuracy": 0.8745
+    },
+    "41-60 words": {
+      "n": 442,
+      "correct": 368,
+      "accuracy": 0.8326
+    },
+    "<=20 words": {
+      "n": 256,
+      "correct": 222,
+      "accuracy": 0.8672
+    },
+    ">60 words": {
+      "n": 71,
+      "correct": 54,
+      "accuracy": 0.7606
+    }
+  }
+}

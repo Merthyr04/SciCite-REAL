@@ -5,8 +5,8 @@
   Scaffolds for Citation Intent Classification in Scientific Publications*, Cohan et al., NAACL 2019.
 - **Official download** (mirrored below; 22.1 MB):
   `https://s3-us-west-2.amazonaws.com/ai2-s2-research/scicite/scicite.tar.gz`
-- **Size**: 10,969 annotated citations from 6,627 papers (computer science + biomedicine).
-- **Splits**: train 8,194 / dev 916 / test 1,859.
+- **Size**: 11,020 annotated citations from 6,627 papers (computer science + biomedicine).
+- **Splits**: train 8,243 / dev 916 / test 1,861.
 
 ### Labels
 | field | classes | meaning |

@@ -1,0 +1,23 @@
+{
+  "model": "scibert",
+  "test_loss": 0.45159509778022766,
+  "test_accuracy": 0.8629768941429339,
+  "test_macro_f1": 0.8510812757611209,
+  "test_runtime": 5.978,
+  "test_samples_per_second": 311.308,
+  "test_steps_per_second": 19.572,
+  "epoch": 3.0,
+  "train_loss": 0.11471424996852875,
+  "train_accuracy": 0.9644546888268835,
+  "train_macro_f1": 0.9594159712517009,
+  "train_runtime": 27.8674,
+  "train_samples_per_second": 295.794,
+  "train_steps_per_second": 18.516,
+  "tag": "baseline_scibert",
+  "retrieval": false,
+  "top_k": null,
+  "leak_free": null,
+  "max_length": 256,
+  "pooling": "cls",
+  "seed": 42
+}

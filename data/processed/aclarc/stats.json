@@ -1,0 +1,19 @@
+{
+  "total": 1941,
+  "intent_counts": {
+    "Background": 997,
+    "Uses": 364,
+    "CompareOrContrast": 351,
+    "Motivation": 88,
+    "Extends": 72,
+    "Future": 69
+  },
+  "section_counts": {
+    "introduction": 597,
+    "": 535,
+    "related work": 303,
+    "experiments": 280,
+    "method": 131,
+    "conclusion": 95
+  }
+}

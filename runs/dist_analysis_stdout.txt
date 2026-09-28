@@ -1,0 +1,211 @@
+﻿{
+  "label_distribution": {
+    "train": {
+      "background": {
+        "n": 4840,
+        "pct": 58.72
+      },
+      "method": {
+        "n": 2294,
+        "pct": 27.83
+      },
+      "result": {
+        "n": 1109,
+        "pct": 13.45
+      },
+      "_total": 8243
+    },
+    "dev": {
+      "background": {
+        "n": 538,
+        "pct": 58.73
+      },
+      "method": {
+        "n": 255,
+        "pct": 27.84
+      },
+      "result": {
+        "n": 123,
+        "pct": 13.43
+      },
+      "_total": 916
+    },
+    "test": {
+      "background": {
+        "n": 997,
+        "pct": 53.57
+      },
+      "method": {
+        "n": 605,
+        "pct": 32.51
+      },
+      "result": {
+        "n": 259,
+        "pct": 13.92
+      },
+      "_total": 1861
+    }
+  },
+  "section_distribution": {
+    "train": {
+      "Introduction": {
+        "n": 1685,
+        "pct": 20.44
+      },
+      "Related work": {
+        "n": 181,
+        "pct": 2.2
+      },
+      "Methods": {
+        "n": 1709,
+        "pct": 20.73
+      },
+      "Results": {
+        "n": 982,
+        "pct": 11.91
+      },
+      "Discussion": {
+        "n": 2056,
+        "pct": 24.94
+      },
+      "Other / unlabelled": {
+        "n": 1630,
+        "pct": 19.77
+      }
+    },
+    "dev": {
+      "Introduction": {
+        "n": 199,
+        "pct": 21.72
+      },
+      "Related work": {
+        "n": 18,
+        "pct": 1.97
+      },
+      "Methods": {
+        "n": 180,
+        "pct": 19.65
+      },
+      "Results": {
+        "n": 105,
+        "pct": 11.46
+      },
+      "Discussion": {
+        "n": 224,
+        "pct": 24.45
+      },
+      "Other / unlabelled": {
+        "n": 190,
+        "pct": 20.74
+      }
+    },
+    "test": {
+      "Introduction": {
+        "n": 84,
+        "pct": 4.51
+      },
+      "Related work": {
+        "n": 3,
+        "pct": 0.16
+      },
+      "Methods": {
+        "n": 410,
+        "pct": 22.03
+      },
+      "Results": {
+        "n": 388,
+        "pct": 20.85
+      },
+      "Discussion": {
+        "n": 777,
+        "pct": 41.75
+      },
+      "Other / unlabelled": {
+        "n": 199,
+        "pct": 10.69
+      }
+    }
+  },
+  "intent_by_section_train": {
+    "Introduction": {
+      "n": 1685,
+      "pct_of_split": 20.44,
+      "background": 88.2,
+      "method": 9.9,
+      "result": 1.9
+    },
+    "Related work": {
+      "n": 181,
+      "pct_of_split": 2.2,
+      "background": 84.5,
+      "method": 13.8,
+      "result": 1.7
+    },
+    "Methods": {
+      "n": 1709,
+      "pct_of_split": 20.73,
+      "background": 18.6,
+      "method": 80.7,
+      "result": 0.7
+    },
+    "Results": {
+      "n": 982,
+      "pct_of_split": 11.91,
+      "background": 58.6,
+      "method": 28.8,
+      "result": 12.6
+    },
+    "Discussion": {
+      "n": 2056,
+      "pct_of_split": 24.94,
+      "background": 55.8,
+      "method": 4.0,
+      "result": 40.2
+    },
+    "Other / unlabelled": {
+      "n": 1630,
+      "pct_of_split": 19.77,
+      "background": 71.2,
+      "method": 22.0,
+      "result": 6.9
+    }
+  },
+  "context_length_words": {
+    "background": {
+      "n": 4840,
+      "mean": 33.5,
+      "median": 31.0,
+      "p90": 48,
+      "max": 505
+    },
+    "method": {
+      "n": 2294,
+      "mean": 33.2,
+      "median": 30.0,
+      "p90": 49,
+      "max": 400
+    },
+    "result": {
+      "n": 1109,
+      "mean": 37.4,
+      "median": 34,
+      "p90": 53,
+      "max": 346
+    }
+  },
+  "priors_on_test": {
+    "global_majority_label": "background",
+    "global_majority_accuracy": 0.5357,
+    "section_prior_accuracy": 0.7399,
+    "section_prior_fallback_rows": 0,
+    "section_majority_map": {
+      "Introduction": "background",
+      "Related work": "background",
+      "Methods": "method",
+      "Results": "background",
+      "Discussion": "background",
+      "Other / unlabelled": "background"
+    },
+    "n_test": 1861
+  }
+}

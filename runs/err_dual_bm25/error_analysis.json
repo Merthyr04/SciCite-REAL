@@ -1,0 +1,143 @@
+{
+  "tag": "err_dual_bm25",
+  "checkpoint": "runs\\real_deberta_dual_k3_bm25",
+  "pooling": "dual",
+  "n_test": 1861,
+  "accuracy": 0.8533,
+  "confusion_matrix": {
+    "background": {
+      "method": 85,
+      "background": 830,
+      "result": 82
+    },
+    "result": {
+      "result": 237,
+      "background": 16,
+      "method": 6
+    },
+    "method": {
+      "method": 521,
+      "background": 61,
+      "result": 23
+    }
+  },
+  "per_class": {
+    "background": {
+      "support": 997,
+      "precision": 0.9151,
+      "recall": 0.8325,
+      "f1": 0.8718
+    },
+    "method": {
+      "support": 605,
+      "precision": 0.8513,
+      "recall": 0.8612,
+      "f1": 0.8562
+    },
+    "result": {
+      "support": 259,
+      "precision": 0.693,
+      "recall": 0.9151,
+      "f1": 0.7887
+    }
+  },
+  "top_confusions": [
+    {
+      "gold": "background",
+      "pred": "method",
+      "n": 85
+    },
+    {
+      "gold": "background",
+      "pred": "result",
+      "n": 82
+    },
+    {
+      "gold": "method",
+      "pred": "background",
+      "n": 61
+    },
+    {
+      "gold": "method",
+      "pred": "result",
+      "n": 23
+    },
+    {
+      "gold": "result",
+      "pred": "background",
+      "n": 16
+    },
+    {
+      "gold": "result",
+      "pred": "method",
+      "n": 6
+    }
+  ],
+  "by_section": {
+    "Discussion": {
+      "n": 777,
+      "correct": 670,
+      "accuracy": 0.8623
+    },
+    "Introduction": {
+      "n": 84,
+      "correct": 73,
+      "accuracy": 0.869
+    },
+    "Methods": {
+      "n": 410,
+      "correct": 369,
+      "accuracy": 0.9
+    },
+    "Other / unlabelled": {
+      "n": 199,
+      "correct": 159,
+      "accuracy": 0.799
+    },
+    "Related work": {
+      "n": 3,
+      "correct": 3,
+      "accuracy": 1.0
+    },
+    "Results": {
+      "n": 388,
+      "correct": 314,
+      "accuracy": 0.8093
+    }
+  },
+  "by_length": {
+    "21-40 words": {
+      "n": 1092,
+      "correct": 942,
+      "accuracy": 0.8626
+    },
+    "41-60 words": {
+      "n": 442,
+      "correct": 368,
+      "accuracy": 0.8326
+    },
+    "<=20 words": {
+      "n": 256,
+      "correct": 225,
+      "accuracy": 0.8789
+    },
+    ">60 words": {
+      "n": 71,
+      "correct": 53,
+      "accuracy": 0.7465
+    }
+  },
+  "by_gold_in_evidence": {
+    "False": {
+      "n": 216,
+      "correct": 133,
+      "accuracy": 0.6157
+    },
+    "True": {
+      "n": 1645,
+      "correct": 1455,
+      "accuracy": 0.8845
+    }
+  },
+  "mean_evidence_agreement": 0.8839
+}
