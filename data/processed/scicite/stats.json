@@ -1,0 +1,13 @@
+{
+  "total": 11020,
+  "label_counts": {
+    "background": 6375,
+    "method": 3154,
+    "result": 1491
+  },
+  "label2_counts": {
+    "supportive": 604,
+    "not_supportive": 559,
+    "cant_determine": 8
+  }
+}
