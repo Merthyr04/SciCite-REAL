@@ -1,0 +1,25 @@
+{
+  "config": {
+    "model": "deberta-v3-base",
+    "batch": 8,
+    "accum": 4,
+    "bf16_autocast": true,
+    "gradient_checkpointing": true,
+    "max_length": 256,
+    "warmup_steps": 4,
+    "timed_steps": 30
+  },
+  "baseline_fixed256": {
+    "samples_per_second": 34.1,
+    "timed_optimizer_steps": 30,
+    "elapsed_s": 28.12,
+    "n_examples": 8243
+  },
+  "dual_dynamic_k3": {
+    "samples_per_second": 34.4,
+    "timed_optimizer_steps": 30,
+    "elapsed_s": 27.92,
+    "n_examples": 8243
+  },
+  "overhead_pct": -0.9
+}

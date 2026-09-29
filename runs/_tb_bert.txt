@@ -1,0 +1,46 @@
+﻿  File "E:\Paper\SciCite-REAL\scripts\run_training.py", line 182, in <module>
+    main()
+  File "E:\Paper\SciCite-REAL\scripts\run_training.py", line 146, in main
+    results = train(
+  File "e:\Paper\SciCite-REAL\src\training\trainer.py", line 237, in train
+    trainer.train()
+  File "C:\Users\Chen\AppData\Roaming\TRAE SOLO CN\ModularData\ai-agent\vm\tools\python\lib\site-packages\transformers\trainer.py", line 1520, in train
+    return inner_training_loop(
+  File "C:\Users\Chen\AppData\Roaming\TRAE SOLO CN\ModularData\ai-agent\vm\tools\python\lib\site-packages\transformers\trainer.py", line 1602, in _inner_training_loop
+    self._run_epoch(
+  File "C:\Users\Chen\AppData\Roaming\TRAE SOLO CN\ModularData\ai-agent\vm\tools\python\lib\site-packages\transformers\trainer.py", line 1842, in _run_epoch
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "C:\Users\Chen\AppData\Roaming\TRAE SOLO CN\ModularData\ai-agent\vm\tools\python\lib\site-packages\transformers\trainer.py", line 2014, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+  File "e:\Paper\SciCite-REAL\src\training\trainer.py", line 93, in compute_loss
+    outputs = model(**inputs)
+  File "C:\Users\Chen\AppData\Roaming\TRAE SOLO CN\ModularData\ai-agent\vm\tools\python\lib\site-packages\torch\nn\modules\module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Chen\AppData\Roaming\TRAE SOLO CN\ModularData\ai-agent\vm\tools\python\lib\site-packages\torch\nn\modules\module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\Chen\AppData\Roaming\TRAE SOLO CN\ModularData\ai-agent\vm\tools\python\lib\site-packages\accelerate\utils\operations.py", line 943, in forward
+    return model_forward(*args, **kwargs)
+  File "C:\Users\Chen\AppData\Roaming\TRAE SOLO CN\ModularData\ai-agent\vm\tools\python\lib\site-packages\accelerate\utils\operations.py", line 931, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "C:\Users\Chen\AppData\Roaming\TRAE SOLO CN\ModularData\ai-agent\vm\tools\python\lib\site-packages\torch\amp\autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+  File "e:\Paper\SciCite-REAL\src\models\classifier.py", line 134, in forward
+    out = self.backbone(
+  File "C:\Users\Chen\AppData\Roaming\TRAE SOLO CN\ModularData\ai-agent\vm\tools\python\lib\site-packages\torch\nn\modules\module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Chen\AppData\Roaming\TRAE SOLO CN\ModularData\ai-agent\vm\tools\python\lib\site-packages\torch\nn\modules\module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\Chen\AppData\Roaming\TRAE SOLO CN\ModularData\ai-agent\vm\tools\python\lib\site-packages\transformers\utils\generic.py", line 1068, in wrapper
+    output = func(self, *args, **kwargs)
+  File "C:\Users\Chen\AppData\Roaming\TRAE SOLO CN\ModularData\ai-agent\vm\tools\python\lib\site-packages\transformers\utils\output_capturing.py", line 286, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "C:\Users\Chen\AppData\Roaming\TRAE SOLO CN\ModularData\ai-agent\vm\tools\python\lib\site-packages\transformers\models\bert\modeling_bert.py", line 653, in forward
+    embedding_output = self.embeddings(
+  File "C:\Users\Chen\AppData\Roaming\TRAE SOLO CN\ModularData\ai-agent\vm\tools\python\lib\site-packages\torch\nn\modules\module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Chen\AppData\Roaming\TRAE SOLO CN\ModularData\ai-agent\vm\tools\python\lib\site-packages\torch\nn\modules\module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\Chen\AppData\Roaming\TRAE SOLO CN\ModularData\ai-agent\vm\tools\python\lib\site-packages\transformers\models\bert\modeling_bert.py", line 94, in forward
+    token_type_ids = buffered_token_type_ids.expand(batch_size, seq_length)
+RuntimeError: The expanded size of the tensor (676) must match the existing size (512) at non-singleton dimension 1.  Target sizes: [8, 676].  Tensor sizes: [1, 512]
+

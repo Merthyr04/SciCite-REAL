@@ -1,0 +1,23 @@
+{
+  "model": "deberta",
+  "test_loss": 0.3553186058998108,
+  "test_accuracy": 0.8688876947877485,
+  "test_macro_f1": 0.8548994456839095,
+  "test_runtime": 12.1162,
+  "test_samples_per_second": 153.597,
+  "test_steps_per_second": 9.657,
+  "epoch": 1.0,
+  "train_loss": 0.3271993398666382,
+  "train_accuracy": 0.8801407254640301,
+  "train_macro_f1": 0.8667688577923771,
+  "train_runtime": 51.5244,
+  "train_samples_per_second": 159.982,
+  "train_steps_per_second": 10.015,
+  "tag": "verify_fix",
+  "retrieval": false,
+  "top_k": null,
+  "leak_free": null,
+  "max_length": 256,
+  "pooling": "cls",
+  "seed": 42
+}

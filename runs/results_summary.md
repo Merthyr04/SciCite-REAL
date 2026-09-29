@@ -1,0 +1,24 @@
+| tag | model | retrieval | pooling | top_k | leak_free | TestAcc | Macro-F1 |
+|-----|-------|-----------|---------|-------|-----------|---------|----------|
+| ablation_real_deberta_leakfree | deberta | True | dual | 3 | True | 0.9602 | 0.9448 |
+| aclarc_deberta | deberta | False | cls | None | None | 0.6763 | 0.3136 |
+| aclarc_ret_cls | deberta | True | cls | 3 | False | 0.5108 | 0.1244 |
+| aclarc_ret_dual | deberta | True | dual | 3 | False | 0.5612 | 0.2198 |
+| aclarc_ret_leakfree | deberta | True | dual | 3 | True | 0.6115 | 0.2773 |
+| baseline_bert | bert | False | cls | None | None | 0.8571 | 0.8411 |
+| baseline_deberta | deberta | False | cls | None | None | 0.8598 | 0.8422 |
+| baseline_scibert | scibert | False | cls | None | None | 0.863 | 0.8511 |
+| bert_ret_dual | bert | True | dual | 3 | False | 0.8485 | 0.8322 |
+| real_deberta_dual_k3 | deberta | True | dual | 3 | False | 0.856 | 0.842 |
+| real_deberta_dual_k3_01 | deberta | True | dual | 3 | False | 0.8603 | 0.8458 |
+| real_deberta_dual_k3_bm25 | deberta | True | dual | 3 | False | 0.8538 | 0.8393 |
+| real_deberta_dual_k3_bm25_s1 | deberta | True | dual | 3 | False | 0.8323 | 0.8145 |
+| real_deberta_dual_k3_bm25l_d02 | deberta | True | dual | 3 | False | 0.8431 | 0.8272 |
+| real_deberta_dual_k3_bm25l_s1 | deberta | True | dual | 3 | False | 0.8528 | 0.8353 |
+| real_deberta_k3 | deberta | True | cls | 3 | False | 0.5997 | 0.3873 |
+| real_deberta_k3_bm25 | deberta | True | cls | 3 | False | 0.8307 | 0.8109 |
+| real_deberta_k3_bm25_pt | deberta | True | cls | 3 | False | 0.8522 | 0.8335 |
+| real_deberta_k3_pt | deberta | True | cls | 3 | False | 0.8587 | 0.8451 |
+| scibert_ret_dual | scibert | True | dual | 3 | False | 0.8624 | 0.8501 |
+| smoke2 | deberta | False | cls | None | None | 0.5357 | 0.2326 |
+| verify_fix | deberta | False | cls | None | None | 0.8689 | 0.8549 |
