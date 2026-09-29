@@ -256,8 +256,10 @@ smaller backbone.
 - Code: Apache-2.0. See `LICENSE`.
 - Derived splits, retrieval indices, the raw `metrics.json` behind every table,
   and the analysis JSONs in `runs/` are released with this repository.
-- The augmented inputs are shipped as `data/processed/augmented_datasets.zip`
-  (32.6 MB; unzip in place to obtain `cache/augment_*.pkl`).
+- - The augmented inputs are shipped as a release asset:
+  [augmented_datasets.zip](https://github.com/Merthyr04/SciCite-REAL/releases/download/v1.0-data/augmented_datasets.zip)
+  (32.6 MB; unzip in place to obtain `cache/augment_*.pkl`). They are not committed
+  to the repository because two of the pickles exceed GitHub's 100 MB per-file limit.
 
 If you enrich inputs with cited-paper abstracts via `api.semanticscholar.org`,
 include Semantic Scholar API attribution.
@@ -269,7 +271,7 @@ include Semantic Scholar API attribution.
   title  = {Citation Intent Classification under Retrieval Augmentation:
             A Controlled Study and Its Implications for Scientometric
             Applications},
-  author = {Chen, Boxin},
+  author = {Chen, Boxin and Huang, Shengbo},
   year   = {2026}
 }
 ```
